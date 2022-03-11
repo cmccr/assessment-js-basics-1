@@ -5,21 +5,16 @@ constfaveColors = ['red', 'green', 'black']
 
 //CODE HERE
 
-let crayonBox = ['red', 'blue', 'purple.']
-crayonBox2 = crayonBox.slice(0, 1) 
-  console.log(crayonBox)
-
-
+let colorCopy = constfaveColors.slice(0, 3)
+console.log(colorCopy)
 
 //////////////////PROBLEM 2////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
 
-
-crayonBox.push('orange')
-console.log(crayonBox)
-
+constfaveColors.push('blue')
+console.log(constfaveColors)
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -54,5 +49,13 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
 let answers = []
 
+for(let i = 0; i < bigOrSmallArray.length; i++) {
+ if(bigOrSmallArray[i] > 100) {
+    answers.push('Big')
+ } else if (bigOrSmallArray[i] <= 100) {
+       answers.push('Small')
+ }
+}
+console.log(answers)
 
 
